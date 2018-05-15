@@ -73,12 +73,12 @@ app.controller('pname', ['$scope' ,'$rootScope' ,'$http' ,'$window' ,function($s
 	};
 	var change_links = function(str) {
 		if (w > 1) while (str.includes('"?p=')) {
-		   str=str.replace('"?p=1','?w='+w+'&p=1');
-		   str=str.replace('"?p=2','?w='+w+'&p=2');
-		   str=str.replace('"?p=3','?w='+w+'&p=3');
-		   str=str.replace('"?p=4','?w='+w+'&p=4');
-		   str=str.replace('"?p=5','?w='+w+'&p=5');
-		   str=str.replace('"?p=6','?w='+w+'&p=6');
+		   str=str.replace('"?p=1','"?w='+w+'&p=1');
+		   str=str.replace('"?p=2','"?w='+w+'&p=2');
+		   str=str.replace('"?p=3','"?w='+w+'&p=3');
+		   str=str.replace('"?p=4','"?w='+w+'&p=4');
+		   str=str.replace('"?p=5','"?w='+w+'&p=5');
+		   str=str.replace('"?p=6','"?w='+w+'&p=6');
 		}
 		return str;
 	};
